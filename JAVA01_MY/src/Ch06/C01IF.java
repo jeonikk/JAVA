@@ -45,10 +45,12 @@ public class C01IF {
 //		
 //		if(num%3==0) {
 //			System.out.printf("%d 는 3의 배수입니다\n",num);
-//			
-//			if(num%5==0) {
-//				System.out.printf("%d 는 5의 배수입니다\n",num);
-//			}
+//		}
+//		if(num%5==0) {
+//			System.out.printf("%d 는 5의 배수입니다\n",num);
+//		} 
+//		else {
+//			System.out.printf("%d 는 3과 5의 배수가 아닙니다.\n",num);
 //		}
 				
 		//-----------------------
@@ -168,18 +170,18 @@ public class C01IF {
 		//20세미만 : 요금은 2500원
 		//20세이상 : 요금은 3000원
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("나이를 입력해주세요 : ");
-		int age =sc.nextInt();
-		
-		if(age<=8)
-			System.out.printf("%d세 이상 요금은 1000원입니다.",age);
-		else if(age<=14)
-			System.out.printf("%d세 이상 요금은 2000원입니다.",age);
-		else if(age<=20)
-			System.out.printf("%d세 이상 요금은 2500원입니다.",age);
-		else if(age>=20)
-			System.out.printf("%d세 이상 요금은 3000원입니다.",age);
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("나이를 입력해주세요 : ");
+//		int age =sc.nextInt();
+//		
+//		if(age<=8)
+//			System.out.printf("%d세 이상 요금은 1000원입니다.",age);
+//		else if(age<=14)
+//			System.out.printf("%d세 이상 요금은 2000원입니다.",age);
+//		else if(age<=20)
+//			System.out.printf("%d세 이상 요금은 2500원입니다.",age);
+//		else if(age>=20)
+//			System.out.printf("%d세 이상 요금은 3000원입니다.",age);
 		
 	}
 

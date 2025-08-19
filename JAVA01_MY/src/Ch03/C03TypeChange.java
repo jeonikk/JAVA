@@ -10,7 +10,7 @@ public class C03TypeChange {
 		byte ch2 = (byte)num2;	//마지막 1byte만 존재 10000010 
 
 		System.out.printf("%d\n", ch1);
-		System.out.printf("%d\n", ch2);	 
+		System.out.printf("%d\n", ch2);
 
 	}
 
