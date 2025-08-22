@@ -1,69 +1,54 @@
 package ex;
 
 public class BookDto {
-//	속성
-	private Long bookcode;
+	private long bookCode;
 	private String bookName;
 	private String publisher;
 	private String isbn;
 	
-//	디폴트 생성자
-	
+	//디폴트생성자
 	public BookDto() {}
 	
-//	모든인자 생성자
-
-	public BookDto(Long bookcode, String bookName, String publisher, String isbn) {
+	//모든인자 생성자
+	public BookDto(long bookCode, String bookName, String publisher, String isbn) {
 		super();
-		this.bookcode = bookcode;
+		this.bookCode = bookCode;
 		this.bookName = bookName;
 		this.publisher = publisher;
 		this.isbn = isbn;
 	}
-
 	
-//	Getter and Setter
-	
-	public Long getBookcode() {
-		return bookcode;
+	//Getter and Setter
+	public long getBookCode() {
+		return bookCode;
 	}
-	
-	public void setBookcode(Long bookcode) {
-		this.bookcode = bookcode;
+	public void setBookCode(long bookCode) {
+		this.bookCode = bookCode;
 	}
-	
 	public String getBookName() {
 		return bookName;
 	}
-	
 	public void setBookName(String bookName) {
 		this.bookName = bookName;
 	}
-	
 	public String getPublisher() {
 		return publisher;
 	}
-	
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
 	}
-	
 	public String getIsbn() {
 		return isbn;
 	}
-	
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
 
-	
-//	toString
-	
+	//toString
 	@Override
 	public String toString() {
-		return "BookDto [bookcode=" + bookcode + ", bookName=" + bookName + ", publisher=" + publisher + ", isbn="
+		return "BookDto [bookCode=" + bookCode + ", bookName=" + bookName + ", publisher=" + publisher + ", isbn="
 				+ isbn + "]";
 	}
-	
 	
 }

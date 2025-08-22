@@ -2,9 +2,10 @@ package Ch05;
 
 class Employee {
 	public String name;
-	private int age;
-	private String addr;
+	protected int age;
+	protected String addr;
 
+	public Employee() {}
 	public Employee(String name, int age, String addr) {
 		super();
 		this.name = name;
@@ -16,7 +17,7 @@ class Employee {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name) { 
 		this.name = name;
 	}
 
@@ -46,14 +47,20 @@ class Parttimer extends Employee {
 		this.hour_pay = hour_pay;
 	}
 
-	public void setHourPay(int hour_pay) {
+	
+
+	public void setHour_pay(int hour_pay) {
 		this.hour_pay = hour_pay;
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "Parttimer [hour_pay=" + hour_pay + ", name=" + name + ", age=" + getAge() + ", addr=" + getAddr() + "]";
+		return "Parttimer [hour_pay=" + hour_pay + ", name=" + name + ", age=" + age + ", addr=" + addr + "]";
 	}
+
+
 
 
 }
@@ -62,21 +69,21 @@ class Regular extends Employee {
 
 	private int salary;
 
-	public Regular(String name, int age, String addr, int salary) {
+	public Regular() {
+		
+	}
 
+	public Regular(String name, int age, String addr, int salary)
+	{
 		super(name, age, addr);
-		this.salary = salary;
+		this.salary=salary;
 	}
-
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
-
 
 	@Override
 	public String toString() {
-		return "Regular [salary=" + salary + ", name=" + name + ", age=" + getAge() + ", addr=" + getAddr() + "]";
+		return "Regular [salary=" + salary + ", name=" + name + ", age=" + age + ", addr=" + addr + "]";
 	}
+
 }
 
 public class C05Ex {

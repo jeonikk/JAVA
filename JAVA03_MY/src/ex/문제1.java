@@ -1,6 +1,7 @@
 package ex;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -9,16 +10,36 @@ public class 문제1 {
 	private static Scanner sc = new Scanner(System.in);
 	private static List<String> wordList =new ArrayList<String>();
 	
-	public static void sort(boolean isAsend) {
-		
+	public static void sort(boolean isAsend) { //sort 정렬하다
+		if (isAsend) {
+			Collections.sort(wordList);
+			System.out.println("오름차순으로 정렬");
+		}else {
+			Collections.sort(wordList,Collections.reverseOrder());
+			System.out.println("내림차순으로 정렬");
+		}
 	}
 	
-	public static void add (String word) {
-		
+	public static void add (String word) { //contains 이미 존재하는지 여부
+		if (wordList.contains(word)) {
+			System.out.println(word + "은(는) 이미 존재합니다.");
+		}else  {
+			wordList.add(word);
+			System.out.println(word + "\t 추가 완료!");
+		}
 	}
 	
-	public static void show () {
-		
+	public static void show () { // isEmpty 비어있다
+		if (wordList.isEmpty()) {
+			System.out.println("목록이 비어있습니다.");
+		}else {
+			System.out.println("------목록 확인------");
+			for (String word : wordList) {
+				System.out.printf("\t %s\n",word);
+			}
+			System.out.println("------------------");
+		}
+
 	}
 	
 	public static void main(String[] args) {
@@ -48,7 +69,7 @@ public class 문제1 {
 				show();
 				break;
 			case 4:
-				System.out.println("종료합니다");
+				System.out.println("종료합니다.");
 				System.exit(-1);
 				break;
 			default:
