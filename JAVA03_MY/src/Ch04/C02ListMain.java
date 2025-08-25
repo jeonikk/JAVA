@@ -1,16 +1,13 @@
 package Ch04;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
-public class C01ListMain {
+public class C02ListMain {
 
 	public static void main(String[] args) {
 		
-//		List<String>list = new ArrayList();
-//		List<String>list = new LinkedList();
-		List<String>list = new Vector();
+		List<String>list = new ArrayList();
 //		추가
 		list.add("HTML/CSS/JS");
 		list.add("NODEJS");
@@ -25,13 +22,13 @@ public class C01ListMain {
 		System.out.println("Value로 idx확인 : " + list.indexOf("JAVA"));
 		System.out.println("-------------------");
 		list.forEach(System.out::println);
-////		삭제
-//		list.remove(0);
-//		list.remove("JQUERY");
-//		System.out.println("---");
-//		list.forEach(System.out::println);
-////		전체삭제
-//		list.clear();
+//		삭제
+		list.remove(0);
+		list.remove("JQUERY");
+		System.out.println("---");
+		list.forEach(System.out::println);
+//		전체삭제
+		list.clear();
 		
 	}
 
